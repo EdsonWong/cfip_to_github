@@ -97,7 +97,7 @@ with open(sub_path, 'w') as f:
 subprocess.run(["git", "add", "."], check=True)
 
 # Commit changes
-subprocess.run(["git", "commit", "-m", "openwrt"], check=True)
+subprocess.run(["git", "commit", "-m", "mbp2015"], check=True)
 
 # Force push to the 'sb' branch
-subprocess.run(["git", "push", "-f", "origin", "openwrt"], check=True)
+subprocess.run(["git", "push", "-f", "origin", "mbp2015"], check=True)

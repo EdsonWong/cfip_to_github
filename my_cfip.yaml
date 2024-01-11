@@ -31,7 +31,7 @@ proxies:
   name: icon.EdsonWong.dev1
   network: ws
   port: 80
-  server: 162.159.12.109
+  server: 172.67.93.79
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -46,7 +46,7 @@ proxies:
   name: icon.EdsonWong.dev2
   network: ws
   port: 80
-  server: 104.27.202.45
+  server: 173.245.58.168
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -61,7 +61,7 @@ proxies:
   name: icon.EdsonWong.dev3
   network: ws
   port: 80
-  server: 104.19.138.106
+  server: 172.67.69.20
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -76,7 +76,7 @@ proxies:
   name: icon.EdsonWong.dev4
   network: ws
   port: 80
-  server: 104.20.43.113
+  server: 172.67.115.206
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -91,7 +91,7 @@ proxies:
   name: icon.EdsonWong.dev5
   network: ws
   port: 80
-  server: 104.22.63.223
+  server: 172.66.47.217
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -106,7 +106,7 @@ proxies:
   name: icon.EdsonWong.dev6
   network: ws
   port: 80
-  server: 104.25.8.105
+  server: 173.245.49.194
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -121,7 +121,7 @@ proxies:
   name: icon.EdsonWong.dev7
   network: ws
   port: 80
-  server: 162.159.200.155
+  server: 172.67.235.5
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -136,7 +136,7 @@ proxies:
   name: icon.EdsonWong.dev8
   network: ws
   port: 80
-  server: 104.19.201.147
+  server: 173.245.59.157
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -151,7 +151,7 @@ proxies:
   name: icon.EdsonWong.dev9
   network: ws
   port: 80
-  server: 108.162.193.67
+  server: 172.64.32.229
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -166,7 +166,7 @@ proxies:
   name: icon.EdsonWong.dev10
   network: ws
   port: 80
-  server: 104.24.185.38
+  server: 162.159.200.40
   servername: icon.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
