@@ -78,7 +78,7 @@ vless_nodes = [node for node in data['outbounds'] if node['type'] == 'vless']
 links = []
 i = 1
 for node in vless_nodes:
-    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=icon.mark-jones-w.workers.dev&fp=randomized&type=ws&host=icon.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#icon.EdsonWong.dev{i}"
+    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=usip.mark-jones-w.workers.dev&fp=randomized&type=ws&host=usip.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#usip.EdsonWong.dev{i}"
     i += 1
     links.append(link)
 
@@ -97,7 +97,7 @@ with open(sub_path, 'w') as f:
 subprocess.run(["git", "add", "."], check=True)
 
 # Commit changes
-subprocess.run(["git", "commit", "-m", "mbp2015"], check=True)
+subprocess.run(["git", "commit", "-m", "mbp2015_usip"], check=True)
 
 # Force push to the 'sb' branch
 subprocess.run(["git", "push", "-f", "origin", "mbp2015"], check=True)

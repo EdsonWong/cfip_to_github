@@ -28,11 +28,11 @@ mixed-port: 7890
 mode: rule
 proxies:
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev1
+  name: usip.EdsonWong.dev1
   network: ws
   port: 80
-  server: 172.67.93.79
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.8.61
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -40,14 +40,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev2
+  name: usip.EdsonWong.dev2
   network: ws
   port: 80
-  server: 173.245.58.168
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.201.217
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -55,14 +55,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev3
+  name: usip.EdsonWong.dev3
   network: ws
   port: 80
-  server: 172.67.69.20
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.231.134
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -70,14 +70,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev4
+  name: usip.EdsonWong.dev4
   network: ws
   port: 80
-  server: 172.67.115.206
-  servername: icon.mark-jones-w.workers.dev
+  server: 173.245.59.101
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -85,14 +85,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev5
+  name: usip.EdsonWong.dev5
   network: ws
   port: 80
-  server: 172.66.47.217
-  servername: icon.mark-jones-w.workers.dev
+  server: 162.159.244.130
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -100,14 +100,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev6
+  name: usip.EdsonWong.dev6
   network: ws
   port: 80
-  server: 173.245.49.194
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.182.43
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -115,14 +115,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev7
+  name: usip.EdsonWong.dev7
   network: ws
   port: 80
-  server: 172.67.235.5
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.81.146
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -130,14 +130,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev8
+  name: usip.EdsonWong.dev8
   network: ws
   port: 80
-  server: 173.245.59.157
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.179.155
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -145,14 +145,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev9
+  name: usip.EdsonWong.dev9
   network: ws
   port: 80
-  server: 172.64.32.229
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.202.124
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -160,14 +160,14 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: icon.EdsonWong.dev10
+  name: usip.EdsonWong.dev10
   network: ws
   port: 80
-  server: 162.159.200.40
-  servername: icon.mark-jones-w.workers.dev
+  server: 172.67.133.240
+  servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -175,21 +175,21 @@ proxies:
   uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
   ws-opts:
     headers:
-      Host: icon.mark-jones-w.workers.dev
+      Host: usip.mark-jones-w.workers.dev
     path: /?ed=2048
 proxy-groups:
 - name: SELECT
   proxies:
-  - icon.EdsonWong.dev1
-  - icon.EdsonWong.dev2
-  - icon.EdsonWong.dev3
-  - icon.EdsonWong.dev4
-  - icon.EdsonWong.dev5
-  - icon.EdsonWong.dev6
-  - icon.EdsonWong.dev7
-  - icon.EdsonWong.dev8
-  - icon.EdsonWong.dev9
-  - icon.EdsonWong.dev10
+  - usip.EdsonWong.dev1
+  - usip.EdsonWong.dev2
+  - usip.EdsonWong.dev3
+  - usip.EdsonWong.dev4
+  - usip.EdsonWong.dev5
+  - usip.EdsonWong.dev6
+  - usip.EdsonWong.dev7
+  - usip.EdsonWong.dev8
+  - usip.EdsonWong.dev9
+  - usip.EdsonWong.dev10
   type: select
 rule-providers:
   apple:
