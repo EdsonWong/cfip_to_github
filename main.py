@@ -5,12 +5,23 @@ import subprocess
 import os
 import yaml
 
-# 每周3、5、7  3:00 执行 chooseip_and_jsontosub.py 先IP优选 再将优选IP写入 json文件 并将 json文件 转为 订阅文件，最后提交github
-# 0 3 * * 3,5,7 cd /Users/icon/Desktop/cfio_to_github && /Users/ubiloc/anaconda3/bin/python chooseip_and_jsontosub.py
+# 每天 0:10 执行 main.py 先IP优选 再将优选IP写入 json文件 并将 json文件 转为 订阅文件，最后提交github
+# crontab -e
+# 0 10 * * * cd /Users/icon/Desktop/cfip_to_github && /Users/ubiloc/anaconda3/bin/python main.py
 
 # 执行 CloudflareST 进行IP优选
 # subprocess.run(["/usr/bin/sudo", "./CloudflareST", "-tl", "200", "-sl", "9"], check=True)
-subprocess.run(["./CloudflareST", "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4", "-n", "400", "-t", "8", "-tl", "200", "-sl", "10", "-f", "ip.txt"], check=True)
+'''
+subprocess.run(["./CloudflareST",
+                "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
+                "-n", "400",
+                "-t", "8",
+                "-tl", "250",
+                "-sl", "10",
+                "-tlr", "0.4",
+                "-f", "ip.txt"],
+                check=True)
+'''
 
 # 获取当前工作路径
 current_dir = os.getcwd()
@@ -23,6 +34,7 @@ with open(csv_path, 'r') as f:
     reader = csv.reader(f)
     next(reader)  # 跳过表头
     ip_addresses = [row[0] for _, row in zip(range(10), reader)]  # 获取前10个IP地址
+
 
 ################################
 # 开始将 csv 转 sing-box 订阅链接
@@ -46,11 +58,12 @@ with open(json_path, 'w') as f:
     json.dump(data, f, indent=4)
 # 更新完json
 
+
 ################################
 # 开始将 csv 转 clash 订阅链接
 ################################
 # 读取YAML文件
-with open('cfip.yaml', 'r') as f:
+with open('my_cfip.yaml', 'r') as f:
     data = yaml.safe_load(f)
 
 # 替换server字段
@@ -86,7 +99,7 @@ links_str = '\n'.join(links)
 sr_links_base64 = base64.b64encode(links_str.encode()).decode()
 
 # Write the base64 links to the subscribe file
-sub_path = os.path.join(current_dir, "cfip_sr_sub.txt")
+sub_path = os.path.join(current_dir, "my_cfip_sr_sub.txt")
 with open(sub_path, 'w') as f:
     f.write(sr_links_base64)
 # 更新完 sr 订阅
@@ -99,6 +112,9 @@ subprocess.run(["git", "add", "."], check=True)
 subprocess.run(["git", "commit", "-m", "mbp2021"], check=True)
 
 # Pull and push to the branch
-subprocess.run(["git", "pull", "origin", "mbp2021"], check=True)
-
-subprocess.run(["git", "push", "-u", "origin", "mbp2021"], check=True)
+# GitLab
+subprocess.run(["git", "pull", "gitlab", "mbp2021"], check=True)
+subprocess.run(["git", "push", "gitlab", "mbp2021"], check=True)
+# GitHub
+subprocess.run(["git", "pull", "github", "mbp2021"], check=True)
+subprocess.run(["git", "push", "github", "mbp2021"], check=True)
