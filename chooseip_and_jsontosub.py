@@ -5,22 +5,15 @@ import subprocess
 import os
 import yaml
 
-#######################
-###     mbp2015     ###
-#######################
+# 每周3、5、7  3:00 执行 chooseip_and_jsontosub.py 先IP优选 再将优选IP写入 json文件 并将 json文件 转为 订阅文件，最后提交github
+# 0 3 * * 3,5,7 cd /Users/icon/Desktop/cfio_to_github && /Users/ubiloc/anaconda3/bin/python chooseip_and_jsontosub.py
 
-# 每天 0:15 执行 chooseip_and_jsontosub.py 先IP优选 再将优选IP写入 json文件 并将 json文件 转为 订阅文件，最后提交github
-# 15 0 * * * cd /mac/cfip_to_github && /User/mac/anaconda3/bin/python chooseip_and_jsontosub.py
+# 执行 CloudflareST 进行IP优选
+# subprocess.run(["/usr/bin/sudo", "./CloudflareST", "-tl", "200", "-sl", "9"], check=True)
+subprocess.run(["./CloudflareST", "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4", "-n", "400", "-t", "8", "-tl", "200", "-sl", "10", "-f", "ip.txt"], check=True)
 
 # 获取当前工作路径
 current_dir = os.getcwd()
-
-# 执行 CloudflareST 进行IP优选 
-subprocess.run(["./CloudflareST", "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4", "-n", "300", "-t", "8", "-tl", "100", "-sl", "10", "-f", "newip.txt"], check=True)
-# subprocess.run(["./CloudflareST", "-n", "500", "-t", "10", "-httping", "-cfcolo", "HKG", "-tl", "100", "-tlr", "0.05", "-sl", "10", "-p" ,"5", "-f", "ip.txt", "-o", "result_hk.csv"], check=True)
-# subprocess.run(["./CloudflareST", "-httping", "-cfcolo", "LAX,SEA,SJC", "-n", "400", "-t", "8", "-tl", "500", "-tlr", "0.05", "-sl", "5", "-p" ,"5", "-f", "ip.txt", "-o", "result_usa.csv"], check=True)
-# subprocess.run(["./CloudflareST", "-url", "https://pencilfiles.annonymus.cf/cloudflarest-200mb.rar", "-httping", "-cfcolo", "HKG", "-n", "300", "-t", "8", "-tl", "200", "-tlr", "0.5", "-sl", "5", "-p" ,"10", "-f", "newip.txt", "-o", "result_hk.csv"], check=True)
-
 
 # csv文件路径
 csv_path = os.path.join(current_dir,"result.csv")
@@ -53,12 +46,11 @@ with open(json_path, 'w') as f:
     json.dump(data, f, indent=4)
 # 更新完json
 
-
 ################################
 # 开始将 csv 转 clash 订阅链接
 ################################
 # 读取YAML文件
-with open('my_cfip.yaml', 'r') as f:
+with open('cfip.yaml', 'r') as f:
     data = yaml.safe_load(f)
 
 # 替换server字段
@@ -67,9 +59,8 @@ for i, proxy in enumerate(data['proxies']):
         proxy['server'] = ip_addresses[i]
 
 # 写入YAML文件
-with open('my_cfip.yaml', 'w') as f:
+with open('cfip.yaml', 'w') as f:
     yaml.safe_dump(data, f)
-# 更新完yaml
 
 
 ################################
@@ -86,7 +77,7 @@ vless_nodes = [node for node in data['outbounds'] if node['type'] == 'vless']
 links = []
 i = 1
 for node in vless_nodes:
-    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=usip.mark-jones-w.workers.dev&fp=randomized&type=ws&host=usip.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#usip.EdsonWong.dev{i}"
+    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=icon.mark-jones-w.workers.dev&fp=randomized&type=ws&host=icon.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#icon.mbp2021.dev{i}"
     i += 1
     links.append(link)
 
@@ -95,17 +86,19 @@ links_str = '\n'.join(links)
 sr_links_base64 = base64.b64encode(links_str.encode()).decode()
 
 # Write the base64 links to the subscribe file
-sub_path = os.path.join(current_dir, "my_cfip_sr_sub.txt")
+sub_path = os.path.join(current_dir, "cfip_sr_sub.txt")
 with open(sub_path, 'w') as f:
     f.write(sr_links_base64)
 # 更新完 sr 订阅
 
-
+# 提交 git
 # Add all changes to staging area
 subprocess.run(["git", "add", "."], check=True)
 
 # Commit changes
-subprocess.run(["git", "commit", "-m", "mbp2015_usip"], check=True)
+subprocess.run(["git", "commit", "-m", "mbp2021"], check=True)
 
-# Force push to the 'sb' branch
-subprocess.run(["git", "push", "-f", "origin", "mbp2015"], check=True)
+# Pull and push to the branch
+subprocess.run(["git", "pull", "origin", "mbp2021"], check=True)
+
+subprocess.run(["git", "push", "-u", "origin", "mbp2021"], check=True)
