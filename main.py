@@ -11,7 +11,7 @@ import yaml
 
 # 执行 CloudflareST 进行IP优选
 # subprocess.run(["/usr/bin/sudo", "./CloudflareST", "-tl", "200", "-sl", "9"], check=True)
-'''
+
 subprocess.run(["./CloudflareST",
                 "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
                 "-n", "400",
@@ -21,7 +21,6 @@ subprocess.run(["./CloudflareST",
                 "-tlr", "0.4",
                 "-f", "ip.txt"],
                 check=True)
-'''
 
 # 获取当前工作路径
 current_dir = os.getcwd()
@@ -74,6 +73,7 @@ for i, proxy in enumerate(data['proxies']):
 # 写入YAML文件
 with open('cfip.yaml', 'w') as f:
     yaml.safe_dump(data, f)
+# 更新完 clash 订阅
 
 
 ################################
