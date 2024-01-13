@@ -16,7 +16,7 @@ import yaml
 current_dir = os.getcwd()
 
 # 执行 CloudflareST 进行IP优选 
-subprocess.run(["./CloudflareST", "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4", "-n", "300", "-t", "8", "-tl", "100", "-sl", "10", "-f", "newip.txt"], check=True)
+subprocess.run(["./CloudflareST", "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4", "-n", "300", "-t", "8", "-tl", "200", "-sl", "10", "-f", "newip.txt"], check=True)
 # subprocess.run(["./CloudflareST", "-n", "500", "-t", "10", "-httping", "-cfcolo", "HKG", "-tl", "100", "-tlr", "0.05", "-sl", "10", "-p" ,"5", "-f", "ip.txt", "-o", "result_hk.csv"], check=True)
 # subprocess.run(["./CloudflareST", "-httping", "-cfcolo", "LAX,SEA,SJC", "-n", "400", "-t", "8", "-tl", "500", "-tlr", "0.05", "-sl", "5", "-p" ,"5", "-f", "ip.txt", "-o", "result_usa.csv"], check=True)
 # subprocess.run(["./CloudflareST", "-url", "https://pencilfiles.annonymus.cf/cloudflarest-200mb.rar", "-httping", "-cfcolo", "HKG", "-n", "300", "-t", "8", "-tl", "200", "-tlr", "0.5", "-sl", "5", "-p" ,"10", "-f", "newip.txt", "-o", "result_hk.csv"], check=True)
