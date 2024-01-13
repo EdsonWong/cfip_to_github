@@ -9,17 +9,25 @@ import yaml
 ###     mbp2015     ###
 #######################
 
-# 每天 0:15 执行 chooseip_and_jsontosub.py 先IP优选 再将优选IP写入 json文件 并将 json文件 转为 订阅文件，最后提交github
-# 15 0 * * * cd /mac/cfip_to_github && /User/mac/anaconda3/bin/python chooseip_and_jsontosub.py
+# 每天 0:15 执行 main.py 先IP优选 再将优选IP写入 json文件 并将 json文件 转为 订阅文件，最后提交github
+# 15 0 * * * cd /mac/cfip_to_github && /User/mac/anaconda3/bin/python main.py
 
 # 获取当前工作路径
 current_dir = os.getcwd()
 
 # 执行 CloudflareST 进行IP优选 
-subprocess.run(["./CloudflareST", "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4", "-n", "300", "-t", "8", "-tl", "200", "-sl", "10", "-f", "newip.txt"], check=True)
 # subprocess.run(["./CloudflareST", "-n", "500", "-t", "10", "-httping", "-cfcolo", "HKG", "-tl", "100", "-tlr", "0.05", "-sl", "10", "-p" ,"5", "-f", "ip.txt", "-o", "result_hk.csv"], check=True)
 # subprocess.run(["./CloudflareST", "-httping", "-cfcolo", "LAX,SEA,SJC", "-n", "400", "-t", "8", "-tl", "500", "-tlr", "0.05", "-sl", "5", "-p" ,"5", "-f", "ip.txt", "-o", "result_usa.csv"], check=True)
 # subprocess.run(["./CloudflareST", "-url", "https://pencilfiles.annonymus.cf/cloudflarest-200mb.rar", "-httping", "-cfcolo", "HKG", "-n", "300", "-t", "8", "-tl", "200", "-tlr", "0.5", "-sl", "5", "-p" ,"10", "-f", "newip.txt", "-o", "result_hk.csv"], check=True)
+subprocess.run(["./CloudflareST",
+            "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
+            "-n", "300",
+            "-t", "8",
+            "-tl", "200",
+            "-sl", "10",
+            "-tlr", "0.2",
+            "-f", "newip.txt"],
+            check=True)
 
 
 # csv文件路径
@@ -105,7 +113,12 @@ with open(sub_path, 'w') as f:
 subprocess.run(["git", "add", "."], check=True)
 
 # Commit changes
-subprocess.run(["git", "commit", "-m", "mbp2015_usip"], check=True)
+subprocess.run(["git", "commit", "-m", "mbp2015"], check=True)
 
-# Force push to the 'sb' branch
-subprocess.run(["git", "push", "-f", "origin", "mbp2015"], check=True)
+# Pull and push to the branch
+# GitLab
+subprocess.run(["git", "pull", "gitlab", "mbp2015"], check=True)
+subprocess.run(["git", "push", "gitlab", "mbp2015"], check=True)
+# GitHub
+subprocess.run(["git", "pull", "github", "mbp2015"], check=True)
+subprocess.run(["git", "push", "github", "mbp2015"], check=True)
