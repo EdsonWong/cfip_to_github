@@ -19,7 +19,7 @@ subprocess.run(["./CloudflareST",
                 "-tl", "250",
                 "-sl", "10",
                 "-tlr", "0.4",
-                "-f", "ip.txt"],
+                "-f", "newip.txt"],
                 check=True)
 
 # 获取当前工作路径
@@ -104,7 +104,11 @@ with open(sub_path, 'w') as f:
     f.write(sr_links_base64)
 # 更新完 sr 订阅
 
-# 提交 git
+# Git
+# update changes
+subprocess.run(["git", "pull", "gitlab", "mbp2021"], check=True)
+subprocess.run(["git", "pull", "github", "mbp2021"], check=True)
+
 # Add all changes to staging area
 subprocess.run(["git", "add", "."], check=True)
 
@@ -113,8 +117,6 @@ subprocess.run(["git", "commit", "-m", "mbp2021"], check=True)
 
 # Pull and push to the branch
 # GitLab
-subprocess.run(["git", "pull", "gitlab", "mbp2021"], check=True)
 subprocess.run(["git", "push", "gitlab", "mbp2021"], check=True)
 # GitHub
-subprocess.run(["git", "pull", "github", "mbp2021"], check=True)
 subprocess.run(["git", "push", "github", "mbp2021"], check=True)

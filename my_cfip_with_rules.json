@@ -125,9 +125,9 @@
         {
             "tag": "1",
             "type": "vless",
-            "server": "104.16.245.135",
+            "server": "104.19.147.93",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -139,9 +139,9 @@
         {
             "tag": "2",
             "type": "vless",
-            "server": "104.17.29.34",
+            "server": "104.19.146.142",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -153,9 +153,9 @@
         {
             "tag": "3",
             "type": "vless",
-            "server": "104.16.98.156",
+            "server": "104.19.144.199",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -167,9 +167,9 @@
         {
             "tag": "4",
             "type": "vless",
-            "server": "104.16.242.126",
+            "server": "104.19.148.179",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -181,9 +181,9 @@
         {
             "tag": "5",
             "type": "vless",
-            "server": "104.16.254.36",
+            "server": "104.16.155.72",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -195,9 +195,9 @@
         {
             "tag": "6",
             "type": "vless",
-            "server": "104.16.240.156",
+            "server": "104.16.43.225",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -209,9 +209,9 @@
         {
             "tag": "7",
             "type": "vless",
-            "server": "104.16.158.193",
+            "server": "104.16.96.214",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -223,9 +223,9 @@
         {
             "tag": "8",
             "type": "vless",
-            "server": "104.16.45.14",
+            "server": "104.16.148.163",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -237,9 +237,9 @@
         {
             "tag": "9",
             "type": "vless",
-            "server": "104.16.241.245",
+            "server": "104.19.145.28",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
@@ -251,9 +251,9 @@
         {
             "tag": "10",
             "type": "vless",
-            "server": "104.16.40.206",
+            "server": "104.16.111.76",
             "server_port": 80,
-            "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
+            "uuid": "b2a19f4c-8abe-41d7-ae59-62b6d995b9a6",
             "transport": {
                 "type": "ws",
                 "path": "/?ed=2048",
