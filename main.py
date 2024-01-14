@@ -117,7 +117,7 @@ subprocess.run(["git", "commit", "-m", "mbp2015"], check=True)
 # Pull and push to the branch
 # GitLab
 subprocess.run(["git", "pull", "gitlab", "mbp2015"], check=True)
-subprocess.run(["git", "push", "gitlab", "mbp2015"], check=True)
+subprocess.run(["git", "push", "-u", "gitlab", "mbp2015"], check=True)
 # GitHub
 subprocess.run(["git", "pull", "github", "mbp2015"], check=True)
-subprocess.run(["git", "push", "github", "mbp2015"], check=True)
+subprocess.run(["git", "push", "-u", "github", "mbp2015"], check=True)

@@ -125,7 +125,7 @@
         {
             "tag": "1",
             "type": "vless",
-            "server": "162.159.42.133",
+            "server": "45.32.177.92",
             "server_port": 80,
             "uuid": "4ac04118-4807-4a37-bf28-a1762ac2b788",
             "transport": {
