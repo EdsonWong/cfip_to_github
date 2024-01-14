@@ -107,6 +107,10 @@ with open(sub_path, 'w') as f:
     f.write(sr_links_base64)
 # 更新完 sr 订阅
 
+# Git
+# get changes
+subprocess.run(["git", "pull", "gitlab", "mbp2015"], check=True)
+subprocess.run(["git", "pull", "github", "mbp2015"], check=True)
 
 # Add all changes to staging area
 subprocess.run(["git", "add", "."], check=True)
@@ -116,8 +120,6 @@ subprocess.run(["git", "commit", "-m", "mbp2015"], check=True)
 
 # Pull and push to the branch
 # GitLab
-subprocess.run(["git", "pull", "gitlab", "mbp2015"], check=True)
-subprocess.run(["git", "push", "-u", "gitlab", "mbp2015"], check=True)
+subprocess.run(["git", "push", "gitlab", "mbp2015"], check=True)
 # GitHub
-subprocess.run(["git", "pull", "github", "mbp2015"], check=True)
-subprocess.run(["git", "push", "-u", "github", "mbp2015"], check=True)
+subprocess.run(["git", "push", "github", "mbp2015"], check=True)
