@@ -23,7 +23,7 @@ subprocess.run(["./CloudflareST",
             "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
             "-n", "400",
             "-t", "8",
-            "-tl", "250",
+            "-tl", "300",
             "-sl", "8",
             "-tlr", "0.4",
             "-f", "newip.txt"],
@@ -109,7 +109,7 @@ with open(sub_path, 'w') as f:
 
 # Git
 # get changes
-subprocess.run(["git", "pull", "gitlab", "mbp2015"], check=True)
+subprocess.run(["git", "pull", "gitlab", "mbp2015"], check=False)
 subprocess.run(["git", "pull", "github", "mbp2015"], check=False)
 
 # Add all changes to staging area
@@ -120,6 +120,6 @@ subprocess.run(["git", "commit", "-m", "mbp2015"], check=True)
 
 # Pull and push to the branch
 # GitLab
-subprocess.run(["git", "push", "gitlab", "mbp2015"], check=True)
+subprocess.run(["git", "push", "gitlab", "mbp2015"], check=False)
 # GitHub
 subprocess.run(["git", "push", "github", "mbp2015"], check=False)
