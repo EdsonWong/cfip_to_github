@@ -24,7 +24,7 @@ subprocess.run(["./CloudflareST",
             "-n", "400",
             "-t", "8",
             "-tl", "250",
-            "-sl", "9",
+            "-sl", "8",
             "-tlr", "0.4",
             "-f", "newip.txt"],
             check=True)
