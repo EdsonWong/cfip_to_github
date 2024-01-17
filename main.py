@@ -5,6 +5,10 @@ import subprocess
 import os
 import yaml
 
+#######################
+###     mbp2021     ###
+#######################
+
 # 每天 0:10 执行 main.py 先IP优选 再将优选IP写入 json文件 并将 json文件 转为 订阅文件，最后提交github
 # crontab -e
 # 0 10 * * * cd /Users/icon/Desktop/cfip_to_github && /Users/ubiloc/anaconda3/bin/python main.py
@@ -13,11 +17,11 @@ import yaml
 # subprocess.run(["/usr/bin/sudo", "./CloudflareST", "-tl", "200", "-sl", "9"], check=True)
 
 subprocess.run(["./CloudflareST",
-                "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
-                "-n", "400",
+#                "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
+                "-n", "500",
                 "-t", "8",
                 "-tl", "250",
-                "-sl", "10",
+                "-sl", "8",
                 "-tlr", "0.4",
                 "-f", "newip.txt"],
                 check=True)
@@ -71,7 +75,7 @@ for i, proxy in enumerate(data['proxies']):
         proxy['server'] = ip_addresses[i]
 
 # 写入YAML文件
-with open('cfip.yaml', 'w') as f:
+with open('my_cfip.yaml', 'w') as f:
     yaml.safe_dump(data, f)
 # 更新完 clash 订阅
 
@@ -90,7 +94,7 @@ vless_nodes = [node for node in data['outbounds'] if node['type'] == 'vless']
 links = []
 i = 1
 for node in vless_nodes:
-    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=icon.mark-jones-w.workers.dev&fp=randomized&type=ws&host=icon.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#icon.mbp2021.dev{i}"
+    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=usip.mark-jones-w.workers.dev&fp=randomized&type=ws&host=usip.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#icon.mbp2021.dev{i}"
     i += 1
     links.append(link)
 
@@ -107,7 +111,7 @@ with open(sub_path, 'w') as f:
 # Git
 # update changes
 subprocess.run(["git", "pull", "gitlab", "mbp2021"], check=True)
-subprocess.run(["git", "pull", "github", "mbp2021"], check=True)
+subprocess.run(["git", "pull", "github", "mbp2021"], check=False)
 
 # Add all changes to staging area
 subprocess.run(["git", "add", "."], check=True)
@@ -119,4 +123,4 @@ subprocess.run(["git", "commit", "-m", "mbp2021"], check=True)
 # GitLab
 subprocess.run(["git", "push", "gitlab", "mbp2021"], check=True)
 # GitHub
-subprocess.run(["git", "push", "github", "mbp2021"], check=True)
+subprocess.run(["git", "push", "github", "mbp2021"], check=False)

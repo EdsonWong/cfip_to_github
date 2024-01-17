@@ -31,13 +31,13 @@ proxies:
   name: usip.EdsonWong.dev1
   network: ws
   port: 80
-  server: 104.16.9.201
+  server: 104.21.234.207
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -46,13 +46,13 @@ proxies:
   name: usip.EdsonWong.dev2
   network: ws
   port: 80
-  server: 104.16.134.38
+  server: 104.21.231.88
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -61,13 +61,13 @@ proxies:
   name: usip.EdsonWong.dev3
   network: ws
   port: 80
-  server: 104.16.29.28
+  server: 104.21.232.9
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -76,13 +76,13 @@ proxies:
   name: usip.EdsonWong.dev4
   network: ws
   port: 80
-  server: 104.16.136.105
+  server: 104.21.229.144
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -91,13 +91,13 @@ proxies:
   name: usip.EdsonWong.dev5
   network: ws
   port: 80
-  server: 104.21.215.129
+  server: 104.21.239.145
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -106,13 +106,13 @@ proxies:
   name: usip.EdsonWong.dev6
   network: ws
   port: 80
-  server: 104.16.11.216
+  server: 104.21.238.252
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -121,13 +121,13 @@ proxies:
   name: usip.EdsonWong.dev7
   network: ws
   port: 80
-  server: 104.27.202.221
+  server: 104.21.236.38
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -136,13 +136,13 @@ proxies:
   name: usip.EdsonWong.dev8
   network: ws
   port: 80
-  server: 104.24.51.199
+  server: 104.21.230.251
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -151,13 +151,13 @@ proxies:
   name: usip.EdsonWong.dev9
   network: ws
   port: 80
-  server: 104.24.200.82
+  server: 104.21.233.191
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -166,13 +166,13 @@ proxies:
   name: usip.EdsonWong.dev10
   network: ws
   port: 80
-  server: 104.22.9.43
+  server: 104.21.237.70
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -195,79 +195,79 @@ rule-providers:
   apple:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/apple.yaml
+    path: ./ruleset/apple.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
   applications:
     behavior: classical
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/applications.yaml
+    path: ./ruleset/applications.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
   cncidr:
     behavior: ipcidr
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/cncidr.yaml
+    path: ./ruleset/cncidr.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
   direct:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/direct.yaml
+    path: ./ruleset/direct.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
   gfw:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/gfw.yaml
+    path: ./ruleset/gfw.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
   google:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/google.yaml
+    path: ./ruleset/google.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
   icloud:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/icloud.yaml
+    path: ./ruleset/icloud.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
   lancidr:
     behavior: ipcidr
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/lancidr.yaml
+    path: ./ruleset/lancidr.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
   private:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/private.yaml
+    path: ./ruleset/private.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
   proxy:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/proxy.yaml
+    path: ./ruleset/proxy.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
   reject:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/reject.yaml
+    path: ./ruleset/reject.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
   telegramcidr:
     behavior: ipcidr
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/telegramcidr.yaml
+    path: ./ruleset/telegramcidr.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
   tld-not-cn:
     behavior: domain
     interval: 86400
-    path: /Users/icon/.config/clash/ruleset/tld-not-cn.yaml
+    path: ./ruleset/tld-not-cn.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
 rules:
