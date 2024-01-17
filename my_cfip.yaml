@@ -31,13 +31,13 @@ proxies:
   name: usip.EdsonWong.dev1
   network: ws
   port: 80
-  server: 154.85.99.113
+  server: 104.26.12.191
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -46,13 +46,13 @@ proxies:
   name: usip.EdsonWong.dev2
   network: ws
   port: 80
-  server: 172.64.137.206
+  server: 172.64.98.123
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -61,13 +61,13 @@ proxies:
   name: usip.EdsonWong.dev3
   network: ws
   port: 80
-  server: 162.159.128.237
+  server: 162.159.140.70
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -76,13 +76,13 @@ proxies:
   name: usip.EdsonWong.dev4
   network: ws
   port: 80
-  server: 104.20.29.94
+  server: 172.64.163.47
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -91,13 +91,13 @@ proxies:
   name: usip.EdsonWong.dev5
   network: ws
   port: 80
-  server: 172.64.138.224
+  server: 172.67.70.218
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -106,13 +106,13 @@ proxies:
   name: usip.EdsonWong.dev6
   network: ws
   port: 80
-  server: 172.64.192.131
+  server: 172.64.135.6
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -121,13 +121,13 @@ proxies:
   name: usip.EdsonWong.dev7
   network: ws
   port: 80
-  server: 172.64.105.146
+  server: 172.64.108.40
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -136,13 +136,13 @@ proxies:
   name: usip.EdsonWong.dev8
   network: ws
   port: 80
-  server: 172.64.135.174
+  server: 172.64.193.55
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -151,13 +151,13 @@ proxies:
   name: usip.EdsonWong.dev9
   network: ws
   port: 80
-  server: 172.64.110.146
+  server: 154.85.99.83
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev
@@ -166,13 +166,13 @@ proxies:
   name: usip.EdsonWong.dev10
   network: ws
   port: 80
-  server: 172.64.198.50
+  server: 162.159.142.110
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 4ac04118-4807-4a37-bf28-a1762ac2b788
+  uuid: ebdbda69-fec9-4dda-920d-87b41f96af1f
   ws-opts:
     headers:
       Host: usip.mark-jones-w.workers.dev

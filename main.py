@@ -110,7 +110,7 @@ with open(sub_path, 'w') as f:
 # Git
 # get changes
 subprocess.run(["git", "pull", "gitlab", "mbp2015"], check=True)
-subprocess.run(["git", "pull", "github", "mbp2015"], check=True)
+subprocess.run(["git", "pull", "github", "mbp2015"], check=False)
 
 # Add all changes to staging area
 subprocess.run(["git", "add", "."], check=True)
@@ -122,4 +122,4 @@ subprocess.run(["git", "commit", "-m", "mbp2015"], check=True)
 # GitLab
 subprocess.run(["git", "push", "gitlab", "mbp2015"], check=True)
 # GitHub
-subprocess.run(["git", "push", "github", "mbp2015"], check=True)
+subprocess.run(["git", "push", "github", "mbp2015"], check=False)
