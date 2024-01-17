@@ -31,7 +31,7 @@ proxies:
   name: usip.EdsonWong.dev1
   network: ws
   port: 80
-  server: 104.26.12.191
+  server: 162.159.142.18
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -46,7 +46,7 @@ proxies:
   name: usip.EdsonWong.dev2
   network: ws
   port: 80
-  server: 172.64.98.123
+  server: 172.64.128.154
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -61,7 +61,7 @@ proxies:
   name: usip.EdsonWong.dev3
   network: ws
   port: 80
-  server: 162.159.140.70
+  server: 104.20.22.109
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -76,7 +76,7 @@ proxies:
   name: usip.EdsonWong.dev4
   network: ws
   port: 80
-  server: 172.64.163.47
+  server: 172.64.142.165
   servername: usip.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false

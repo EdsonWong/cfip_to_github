@@ -21,10 +21,10 @@ current_dir = os.getcwd()
 # subprocess.run(["./CloudflareST", "-url", "https://pencilfiles.annonymus.cf/cloudflarest-200mb.rar", "-httping", "-cfcolo", "HKG", "-n", "300", "-t", "8", "-tl", "200", "-tlr", "0.5", "-sl", "5", "-p" ,"10", "-f", "newip.txt", "-o", "result_hk.csv"], check=True)
 subprocess.run(["./CloudflareST",
             "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
-            "-n", "350",
+            "-n", "400",
             "-t", "8",
             "-tl", "250",
-            "-sl", "10",
+            "-sl", "9",
             "-tlr", "0.4",
             "-f", "newip.txt"],
             check=True)
