@@ -26,7 +26,8 @@ subprocess.run(["./CloudflareST",
             "-tl", "300",
             "-sl", "8",
             "-tlr", "0.4",
-            "-f", "newip.txt"],
+            "-f", "newip.txt",
+            "-o", "result.csv"],
             check=True)
 
 # csv文件路径
