@@ -18,9 +18,9 @@ import yaml
 
 subprocess.run(["./CloudflareST",
 #                "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
-                "-n", "500",
+                "-n", "400",
                 "-t", "5",
-                "-tl", "250",
+                "-tl", "300",
                 "-sl", "8",
                 "-tlr", "0.5",
                 "-f", "ip.txt"],
