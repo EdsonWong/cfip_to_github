@@ -20,10 +20,10 @@ subprocess.run(["./CloudflareST",
 #                "-url", "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4",
                 "-n", "500",
                 "-t", "5",
-                "-tl", "300",
+                "-tl", "250",
                 "-sl", "8",
                 "-tlr", "0.5",
-                "-f", "newip.txt"],
+                "-f", "ip.txt"],
                 check=True)
 
 # 获取当前工作路径
