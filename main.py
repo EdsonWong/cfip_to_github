@@ -94,7 +94,7 @@ vless_nodes = [node for node in data['outbounds'] if node['type'] == 'vless']
 links = []
 i = 1
 for node in vless_nodes:
-    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=usip.mark-jones-w.workers.dev&fp=randomized&type=ws&host=usip.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#icon.mbp2015.dev{i}"
+    link = f"vless://{node['uuid']}@{node['server']}:{node['server_port']}?encryption=none&sni=mbp.mark-jones-w.workers.dev&fp=randomized&type=ws&host=mbp.mark-jones-w.workers.dev&path=%2F%3Fed%3D2048#icon.mbp2015.dev{i}"
     i += 1
     links.append(link)
 
