@@ -125,7 +125,7 @@
         {
             "tag": "1",
             "type": "vless",
-            "server": "104.16.237.10",
+            "server": "104.16.46.6",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -139,7 +139,7 @@
         {
             "tag": "2",
             "type": "vless",
-            "server": "104.17.31.155",
+            "server": "104.16.82.84",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -153,7 +153,7 @@
         {
             "tag": "3",
             "type": "vless",
-            "server": "104.17.47.251",
+            "server": "23.227.38.60",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -167,7 +167,7 @@
         {
             "tag": "4",
             "type": "vless",
-            "server": "104.16.114.143",
+            "server": "104.16.187.183",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -181,7 +181,7 @@
         {
             "tag": "5",
             "type": "vless",
-            "server": "104.16.131.44",
+            "server": "104.16.192.230",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -195,7 +195,7 @@
         {
             "tag": "6",
             "type": "vless",
-            "server": "104.16.54.147",
+            "server": "104.16.142.133",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -209,7 +209,7 @@
         {
             "tag": "7",
             "type": "vless",
-            "server": "104.16.113.150",
+            "server": "104.16.28.39",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -223,7 +223,7 @@
         {
             "tag": "8",
             "type": "vless",
-            "server": "104.16.65.179",
+            "server": "104.16.54.46",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -237,7 +237,7 @@
         {
             "tag": "9",
             "type": "vless",
-            "server": "104.16.43.226",
+            "server": "104.16.51.90",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
@@ -251,7 +251,7 @@
         {
             "tag": "10",
             "type": "vless",
-            "server": "104.16.211.240",
+            "server": "104.16.60.86",
             "server_port": 80,
             "uuid": "ebdbda69-fec9-4dda-920d-87b41f96af1f",
             "transport": {
