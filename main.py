@@ -23,7 +23,7 @@ subprocess.run(["./CloudflareST",
                 "-tl", "300",
                 "-sl", "8",
                 "-tlr", "0.5",
-                "-f", "ip.txt"],
+                "-f", "newip.txt"],
                 check=True)
 
 # 获取当前工作路径
