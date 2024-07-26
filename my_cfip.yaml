@@ -31,7 +31,7 @@ proxies:
   name: usip.EdsonWong.dev1
   network: ws
   port: 80
-  server: 45.159.219.96
+  server: 104.21.46.5
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -46,7 +46,7 @@ proxies:
   name: usip.EdsonWong.dev2
   network: ws
   port: 80
-  server: 104.16.29.216
+  server: 104.21.48.84
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -61,7 +61,7 @@ proxies:
   name: usip.EdsonWong.dev3
   network: ws
   port: 80
-  server: 104.16.175.156
+  server: 172.67.145.43
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -76,7 +76,7 @@ proxies:
   name: usip.EdsonWong.dev4
   network: ws
   port: 80
-  server: 172.67.59.49
+  server: 104.21.47.81
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -91,7 +91,7 @@ proxies:
   name: usip.EdsonWong.dev5
   network: ws
   port: 80
-  server: 104.16.129.178
+  server: 104.21.45.166
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -106,7 +106,7 @@ proxies:
   name: usip.EdsonWong.dev6
   network: ws
   port: 80
-  server: 104.16.182.129
+  server: 104.24.167.86
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -121,7 +121,7 @@ proxies:
   name: usip.EdsonWong.dev7
   network: ws
   port: 80
-  server: 104.16.51.66
+  server: 159.112.235.22
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -136,7 +136,7 @@ proxies:
   name: usip.EdsonWong.dev8
   network: ws
   port: 80
-  server: 104.16.12.250
+  server: 104.21.69.35
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -151,7 +151,7 @@ proxies:
   name: usip.EdsonWong.dev9
   network: ws
   port: 80
-  server: 45.142.120.152
+  server: 104.24.186.13
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
@@ -166,7 +166,7 @@ proxies:
   name: usip.EdsonWong.dev10
   network: ws
   port: 80
-  server: 104.16.145.98
+  server: 104.16.235.109
   servername: mbp.mark-jones-w.workers.dev
   skip-cert-verify: false
   tfo: false
